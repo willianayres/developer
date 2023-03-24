@@ -1,0 +1,569 @@
+/* --- RESET DE ARQUIVO --- */
+* {
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {height:100%;}
+/* ------------------------ */
+
+/* -- CLASSES AUXILIARES -- */
+.clear {clear:both;}
+
+.container {
+	margin: 0 auto;
+	max-width: 960px;
+	padding: 0 2%;
+}
+/* ------------------------ */
+
+/* * * * * * * * * * * * ESTILIZAÇÃO DO SITE * * * * * * * * * * * */
+
+/* --------------------- Sessão  1 --------------------- */
+
+/* PARTE 1 */
+section.header-master {
+	background-image: url('../imagens/bg_01.png');
+	background-size: cover;
+	min-height: 700px;
+	padding: 30px 0 100px 0;
+	width: 100%;
+}
+
+section.header-master header {
+	border-bottom: 3px solid rgba( 71 , 83 , 88 , 0.14 );
+	padding-bottom: 20px;
+}
+
+div.logo {
+	background-image: url('../imagens/logo.png');
+	background-size: 100% 100%;
+	float: left;
+	height: 64px;
+	width: 166px;
+}
+
+header nav.desktop {
+	float: left;
+	padding-left: 60px;
+}
+
+header nav.desktop ul {list-style-type:none;}
+
+header nav.desktop ul li {
+	color: white;
+	display: inline-block;
+	font-size: 16px;
+	padding: 0 15px;
+}
+
+header nav.desktop ul li.selected {
+	color: #509d87;
+	position: relative;
+}
+
+header nav.desktop ul li.selected > span {
+	background: #509d87;
+	bottom: -1px;
+	height: 3px;
+	position: absolute;
+	width: 20px;
+}
+
+header nav.desktop ul li a {
+	color: inherit;
+	text-decoration: none;
+}
+
+nav.mobile {
+	display: none;
+	float: right;
+	margin-right: 10px;
+	position: relative;
+	top: 10px;
+}
+
+nav.mobile h3 {
+	color: white;
+	cursor: pointer;
+	font-size: 28px;
+}
+
+ul.nav-desktop {
+	background: #6CC5B2;
+	display: none;
+	left: 0;
+	list-style-type: none;
+	position: absolute;
+	top: 70px;
+	width: 100%;
+}
+
+ul.nav-desktop li {
+	border-bottom: 1px solid white;
+	padding: 9px 0;
+	text-align: center;
+	width: 100%;
+}
+
+ul.nav-desktop a {color:white;}
+
+div.tel-header 
+	float: left;
+	position: relative;
+	top: -3px;
+}
+
+div.tel-header span{
+	color: white;
+	font-size: 22px;
+	padding-left: 30px;
+}
+
+/* PARTE 2 */
+.header2{padding:60px 0;}
+
+.header2 .pt-1{
+	float: left;
+	width: 50%;
+}
+
+.header2 .pt-1 h2{
+	color: #509d87;
+	font-size: 37px;
+	font-weight: normal;
+}
+
+.header2 .pt-1 p,
+.header2 .pt-1 span{
+	font-size: 15px;
+	padding: 10px 0;
+}
+
+.header2 .pt-1 form input {display:inline-block;}
+
+.header2 .pt-1 form input[type=email]{
+	border-radius: 40px;
+	border: 3px solid #ccc;
+	height: 40px;
+	margin: 10px 0;
+	padding-left: 15px;
+	width: 251px;
+}
+
+.header2 .pt-1 form input[type=email]:focus{outline:0;}
+
+.header2 .pt-1 form input[type=submit]{
+	background-color: #00daaa;
+	border: 0;
+	border-radius: 30px;
+	color: white;
+	cursor: pointer;
+	font-size: 14px;
+	height: 40px;
+	margin: 10px 0;
+	padding: 0 30px;
+}
+
+.header2 .pt-1 span{
+	color: #509d87;
+	display: block;
+	font-size: 13px;
+	margin-top: 20px;
+}
+
+.header2 .pt-2{
+	float: left;
+	padding: 0 30px;
+	width: 50%;
+}
+
+.header2 .pt-2 img{
+	border: 15px solid rgba( 0 , 0 , 0 , 0 );
+	float: left;
+	width: 50%;
+}
+
+/* ------------------------ FIM ------------------------ */
+
+/* --------------------- Sessão  2 --------------------- */
+section.diferencial{padding:40px 0;}
+
+section.diferencial > .container{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.diferencial-single{
+	margin-bottom: 30px;
+	width: 33.3%;
+}
+
+.diferencial-single .img-w{
+	height: 50px;
+	margin-bottom: 20px;
+	width: 50px;
+}
+
+.diferencial-single img{max-width:100%;}
+
+.diferencial-single h2{
+	color: black;
+	font-size: 28px;
+	margin: 30px 0;
+}
+
+.diferencial-single h2 > b{color:#7dd5b0;}
+
+.diferencial-single p{
+	color: #2d2d2d;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+/* ------------------------ FIM ------------------------ */
+
+/* --------------------- Sessão  3 --------------------- */
+section.sobre{
+	position: relative;
+	z-index: 2;
+}
+
+.sobre > .container{max-width:1200px;}
+
+.sobre-container{
+	float: left;
+	width: 50%;
+}
+
+.sobre-padding{padding:10px 50px;}
+
+.sobre-container img{
+	max-width: 100%;
+	position: relative;
+	top: 0px;
+}
+
+.sobre-container h2{
+	color: #a9c4b8;
+	font-size: 33px;
+	font-weight: normal;
+	margin: 10px 0;
+}
+
+.sobre-container h2 > b{color:#7dd5b0;}
+
+.sobre-container p{
+	color: black;
+	font-style: 15px;
+}
+
+/* ------------------------ FIM ------------------------ */
+
+/* --------------------- Sessão  4 --------------------- */
+section.depoimento{
+	background-image: url('../imagens/bg_02.png');
+	background-size: cover;
+	color: #2d2d2d;
+	padding: 200px 0 300px 0;
+	position: relative;
+	text-align: center;
+	top: -70px;
+	width: 100%;
+	z-index: 1;
+}
+
+section.depoimento .w5{
+	float: left;
+	font-size: 30px;
+	position: relative;
+	top: -10px;
+	width: 5%;
+}
+
+section.depoimento .w90{
+	float: left;
+	padding: 3px;
+	width: 90%;
+}
+
+section.depoimento h2{
+	font-size: 29px;
+	font-weight: normal;
+}
+
+section.depoimento p{
+	font-size: 15px;
+	margin: 10px 0;
+}
+/* ------------------------ FIM ------------------------ */
+
+/* --------------------- Sessão  5 --------------------- */
+
+/* PARTE 1 */
+section.etapas{padding:40px 0;}
+
+section.etapas > .container{max-width:1200px;}
+
+section.etapas h2{
+	color: #3b3e42;
+	text-align: center;
+}
+
+.etapas__single{
+	float: left;
+	width: 50%;
+}
+
+.etapas__group img{
+	float: left;
+	max-width: 100%;
+}
+
+.etapas__single .etapas__group:nth-of-type(1) img{width:50%;}
+
+.etapas__group p{
+	color: #509d87;
+	float: left;
+	padding-left: 30px;
+	padding-top: 90px;
+}
+
+/* PARTE 2 */
+.etapas__group2{margin-bottom:40px;}
+
+.etapas__group2 .circle{
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	float: left;
+	height: 100px;
+	position: relative;
+	width: 100px;
+}
+
+.circle .line{
+	background: black;
+	left: 50%;
+	height: 40px;
+	position: absolute;
+	top: 100px;
+	transform: translate(-50%,0);
+	width: 1px;
+	z-index: 10;
+}
+
+.circle span{
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.etapas__descricao{
+	float: left;
+	padding: 0 20px;
+	width: calc(100% - 100px);
+}
+
+.etapas__descricao h3{
+	color: #03ca9f;
+	font-size: 18px;
+}
+
+.etapas__descricao p{
+	color: #2d2d2d;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+/* ------------------------ FIM ------------------------ */
+
+/* --------------------- Sessão  6 --------------------- */
+section.diferencas > .container{
+	max-width: 800px;
+	text-align: center;
+}
+
+section.diferencas {padding:50px 0;}
+
+.diferencas__single{
+	float: left;
+	width: 50%;
+}
+
+.diferencas__single h2{
+	color: #a9c4b8;
+	font-size: 30px;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+
+.diferencas__single img{
+	position: relative;
+	top: -10px;
+}
+
+.item-diferencas-1{
+	display: inline-block;
+	margin-top: 10px;
+	position: relative;
+}
+
+.line-diferencas-1{
+	background: #e89595;
+	height: 3px;
+	left: 0;
+	position: absolute;
+	top: 11px;
+	transform: rotate(-5deg);
+	width: 100%;
+	z-index: 10;
+}
+
+.item-diferencas-1 span{
+	color: #a9c4b8;
+	font-size: 21px;
+	font-weight: bold;
+}
+
+.item-diferencas-2{margin-top:10px;}
+
+.item-diferencas-2 span{
+	color: #7dd5b0;
+	font-size: 21px;
+	font-weight: bold;
+}
+
+/* ------------------------ FIM ------------------------ */
+
+/* --------------------- Sessão  6 --------------------- */
+section.contato{
+	background: #98FCDE;
+	padding: 40px 0;
+}
+
+section.contato > .container{max-width:800px;}
+
+section.contato h2{
+	color: #509d87;
+	font-size: 24px;
+	text-align: center;
+}
+
+section.contato p{
+	border-bottom: 1px solid #509d87;
+	color: #509d87;
+	display: block;
+	font-style: 14px;
+	text-align: center;
+	padding: 10px 0;
+}
+
+section.contato .form__group{margin-top:10px;}
+
+section.contato input[type=text]{
+	border: 1px solid #ccc;
+	border-radius: 40px;
+	height: 40px;
+	margin-bottom: 10px;
+	padding-left: 12px;
+	width: 100%;
+}
+section.contato input[type=text]:focus{outline:0;}
+
+section.contato textarea{
+	border: 1px solid #ccc;
+	height: 120px;
+	margin-bottom: 10px;
+	padding: 8px;
+	resize: none;
+	width: 100%;
+}
+
+section.contato input[type=submit]{
+	background-color: #00daaa;;
+	border: 0;
+	border-radius: 100px;
+	color: white;
+	font-weight: bold;
+	height: 60px;
+	width: 170px;
+}
+
+/* ------------------------ FIM ------------------------ */
+
+
+/* * * * * * * * * * * * ESTILIZAÇÃO DO SITE * * * * * * * * * * * */
+
+
+/* * * * * * * * * * * * RESPONSIVO DO SITE  * * * * * * * * * * * */
+@media screen and (max-width: 1024px){
+	/* Sessao 2 */
+	.diferencial-single h2{
+		color: black;
+		font-size: 25px;
+		margin: 30px 0;
+	}
+	/* Sessão 5 */
+	section.etapas > .container{max-width:700px;}
+	.etapas__single{width:100%;}
+	.etapas__group{margin:40px 0;}
+	.etapas__group img{
+		display: block;
+		float: none;
+		margin: 0 auto;
+		max-width: 100%;
+	}
+	.etapas__single .etapas__group:nth-of-type(1) img{
+		max-width: 100%;
+		width: auto;
+	}
+	.etapas__group p{
+		display: block;
+		float: none;
+		padding-left: 0;
+		padding-top: 10px;
+		text-align: center;
+		width: 100%;
+	}
+	/* Sessão 6 */
+	section.diferencas{padding:0;}
+	.diferencas__single{
+		border-right: 0 !important;
+		margin-bottom: 50px;
+		width: 100%;
+	}
+}
+
+
+@media screen and (max-width: 900px){
+	/* Sessão 1 */
+	section.header-master{min-height:400px;}
+	nav.desktop{display:none;}
+	nav.mobile{display:block;}
+	div.tel-header{display:none;}
+	.header2 .pt-1{
+		text-align: center;
+		width: 100%;
+	}
+	.header2 .pt-2 {display:none;}
+	/* Sessão 2 */
+	.diferencial-single{
+		text-align: center;
+		width: 100%;
+	}
+	.diferencial-single .img-w{display:inline-block;}
+	/* Sessão 3 */
+	.sobre > .container{z-index:0;}
+	.sobre-container{width:100%;}
+	.sobre-padding{padding:0;}
+	/* Sessão 4 */
+	section.depoimento{top:0;}
+}
+
+@media screen and (max-width: 480px){
+	/* Sessão 5 */
+	.etapas__group2{display:none;}
+}

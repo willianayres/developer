@@ -1,0 +1,71 @@
+.container-comunidade h4{
+	font-size: 2.5rem;
+	color:#454545;
+}
+
+.feed-wraper-community{
+	min-width: calc(100% - 200px);
+	width: 100%;
+}
+
+.comunidade{
+	width: 100%;
+}
+
+.container-comunidade{
+	width: 100%;
+}
+
+.container-comunidade-wraper{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 40px 0;
+	width: 100%;
+}
+
+.container-comunidade-single{
+	background-color: #FFF;
+	display: flex;
+	margin-bottom: 10px;
+	margin-right: 1%;
+	width:32%;
+}
+
+.container-comunidade-single .img-comunidade-user-single{
+	background-color: blue;
+	height: 100%;
+	width:20%;
+}
+
+.img-comunidade-user-single img{
+	height: 100%;
+	width: 100%;
+}
+
+.container-comunidade-single .info-comunidade-user-single{
+	padding:20px;
+	width:80%;
+}
+
+.info-comunidade-user-single h2{
+	font-weight: 700;
+	font-size: 1.5rem;
+	color:#454545;
+}
+
+.info-comunidade-user-single p{
+	color:#454545;
+	font-size: 1.5rem;
+	margin:10px 0;
+	opacity: 0.4;
+}
+
+.btn-solicitar-amizade a{
+	border: 1px solid #069;
+	color: #069;
+	display: inline-block;
+	font-size: 13px;
+	margin: 5px 0;
+	padding: 5px;
+	text-decoration: none;
+}

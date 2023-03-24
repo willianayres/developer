@@ -1,0 +1,20 @@
+/* Painel > Paginacao --------------------------------------------- */
+.pagination{
+	margin:20px 0;
+	text-align: center;
+}
+
+.pagination a{
+	border: 1px solid #CCC;
+	color: #666;
+	display: inline-block;
+	font-size: 14px;
+	margin: 0 8px;
+	padding: 3px 4px;
+	text-decoration: none;
+}
+
+.pagination a.sel{
+	background: rgb(220,220,220);
+}
+/* ---------------------------------------------------------------- */

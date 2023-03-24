@@ -1,0 +1,251 @@
+/* Reset * * * * * * * * * * * */
+*{
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+html,body{background-color:#FAF9FC;height:100%;}
+/*******************************/
+
+/* Padrão * * * * * * * * * * * */
+.container{
+	margin: 0 auto;
+	max-width: 1100px;
+	padding: 0 2%;
+}
+
+.clear{clear:both;}
+/********************************/
+
+/* Sidebar * * * * * * * * * * * */
+div.sidebar{
+	background-color: #2D3035;
+	float: left;
+	height: 100%;
+	width: 270px;
+}
+
+.sidebar__logo{
+	background-color: #26282D;
+	border-bottom: 2px solid #3f434a;
+	color: white;
+	padding: 20px 10px;
+	text-align: center;
+}
+
+.sidebar__menu{padding:30px;}
+
+.sidebar__menu ul{list-style-type:none;}
+
+.sidebar__menu ul li{
+	color: #717171;
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.sidebar__menu ul li a{
+	color: #717171;
+	font-size: 18px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.sidebar__menu ul li i{
+	max-width: 25px;
+	width: 20%;
+}
+
+.sidebar__menu li:hover i{
+	color: #6D3BB8;
+	transition: 0.6s;
+}
+
+.sidebar__menu li:hover a{
+	color: white;
+	transition: 0.6s;
+}
+/*********************************/
+
+/* Main * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* Main__Header * * * * * * * * * * * * * * * */
+div.main{
+	float: left;
+	height: 100%;
+	width: calc(100% - 270px);
+}
+
+.main__header{
+	background-color: white;
+	border-bottom: 2px solid #ccc;
+	height: 61px;
+	padding: 20px 10px;
+}
+
+.main__header__pesquisa{float:right;}
+
+.pesquisa__icon{
+	background-color: #D6D6D6;
+	color: white;
+	display: inline-block;
+	height: 30px;
+	position: relative;
+	text-align: center;
+	top: -1px;
+	vertical-align: middle;
+	width: 30px;
+}
+
+.pesquisa__icon i{
+	position: relative;
+	top: 7.5px;
+}
+
+.main__header__pesquisa form{display:inline-block;}
+
+.main__header__pesquisa input[type=text]{
+	border: 1px solid #ccc;
+	border-left: 0;
+	font-size: 16px;
+	height: 30px;
+	padding-left: 10px;
+	width: 200px;
+}
+
+.main__header__pesquisa input[type=text]:focus{outline:0;}
+
+.main__header__alerta{
+	background-color: #FBEDEF;
+	cursor: pointer;
+	float: right;
+	height: 30px;
+	margin-right: 30px;
+	position: relative;
+	text-align: center;
+	width: 30px;
+}
+
+.main__header__alerta p{
+	background-color: #ED7387;
+	color: #fff;
+	display: inline-block;
+	font-size: 12px;
+	position: absolute;
+	right: -8px;
+	top: -8px;
+	padding: 3px;
+}
+
+.main__header__alerta i{
+	color: #ED7387;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 30px;
+}
+
+.main__header__nome{
+	color: #A7A7A7;
+	cursor: pointer;
+	float: left;
+	font-size: 23px;
+	font-weight: normal;
+	margin: 0 30px 0 0;
+}
+/**********************************************/
+
+/* Main__ContentL * * * * * * * * * * * * * * * */
+.main__contentleft{
+	float: left;
+	height: calc(100% - 61px);
+	overflow-y: auto;
+	padding: 30px;
+	width: 75%;
+}
+
+.contentleft__panel{
+	background-color: white;
+	border: 2px solid #EBEBEB;
+	float: left;
+	margin-bottom: 10px;
+	padding: 30px;
+	width: 100%;
+}
+
+.contentleft__panel h2{
+	color: #7F7F7F;
+	font-size: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.contentleft__panel p{
+	color: #B2B2B2;
+	font-size: 17px;
+	margin-top: 10px;
+}
+/************************************************/
+
+/* RightBar * * * * * * * * * * * * * * * * * * * */
+.contentright{
+	background-color: #EAEBEB;
+	float: left;
+	height: calc(100% - 61px);
+	overflow-y: auto;
+	padding: 20px;
+	width: 25%;
+}
+
+.contentright__topo h2{
+	border-bottom: 1px solid #ccc;
+	color: #7F7F7F;
+	font-size: 15px;
+	padding: 15px;
+	text-transform: uppercase;
+}
+
+.contentright__textos{
+	border-left: 2px solid #ccc;
+	padding: 10px;
+	position: relative;
+}
+
+.contentright__textos h2{
+	color: #BBBBBB;
+	font-size: 15px;
+	margin: 40px 0 10px 0;
+	text-transform: uppercase;
+}
+
+
+.contentright__textos p{
+	color: #B2B2B2;
+	font-size: 13px;
+}
+
+.circle{
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	height: 20px;
+	left: -11px;
+	position: absolute;
+	top: -10px;
+	width: 20px;
+}
+/**************************************************/
+
+/********************************************************/
+
+@media screen and (max-width: 768px){
+
+	.sidebar{display:none;position:relative;z-index:100;}
+
+	div.main{width:100%;position:absolute;left:0;top: 0;}
+
+	.contentright{display:none;}
+
+	.main__contentleft{width:100%;}
+
+	.contentleft__panel{width:100% !important;}
+
+}

@@ -1,0 +1,198 @@
+/************** Reset Padrão **************/
+*{box-sizing:border-box;font-family:'Helvetica',sans-serif;margin:0;padding:0;}
+
+html,body{background-color:#000;height:100%;overflow-x:hidden;padding:0;}
+/******************************************/
+
+/* Classes Padrão */
+.container{
+	margin: 0 auto;
+	max-width: 1300px;
+	padding: 0 2%;
+}
+.clear{clear:both;}
+/******************/
+
+/*********** Header ***********/
+header{
+	background-color: #000;
+	padding: 12px 0;
+	position: relative;
+}
+
+.header__logo{float:left;}
+
+.header__logo img{max-width:120px;}
+
+.header__menu{
+	display: inline-block;
+	margin-left: 30px; 
+	position: relative;
+	top: 10px;
+}
+
+.header__menu ul{list-style-type:none;}
+
+.header__menu ul li{
+	display: inline-block;
+	font-size: 14px;
+	margin-right: 15px;
+}
+
+.header__menu ul li a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.header__menu2{
+	float: right;
+	margin-top: 10px;
+}
+
+.header__menu2 i{
+	color: #fff;
+	cursor: pointer;
+	font-size: 18px;
+	margin: 0 10px;
+}
+
+.header__menu2 a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.header__menu2 .search{display:inline-block;}
+
+.header__menu2 .notification{
+	display: inline-block;
+	position: relative;
+}
+
+.notification__circle{
+	background-color: #e50914;
+	border-radius: 7.5px;
+	height: 15px;
+	position: absolute;
+	right: 4px;
+	text-align: center;
+	top: -8px;
+	width: 15px;
+}
+
+.notification__circle span{
+	color: #fff;
+	font-size: 10px;
+	vertical-align: 10px;
+}
+/******************************/
+
+/********************* Destaque *********************/
+.destaque{
+	background-image: url('../imagens/saint-seya.jpg');
+	background-size: cover;
+	height: 600px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: relative;
+	width: 100%;
+	z-index: 1;
+}
+
+#video-destaque{
+	left: 0;
+	min-height: 100%;
+	min-width: 100%;
+	position: absolute;
+	top: 0;
+	z-index: 1;
+}
+
+.destaque > .overlay{
+	background-color: rgba(0,0,0,0.3);
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+}
+
+.destaque__texto{
+	color: #fff;
+	margin-left: 4%;
+	position: relative;
+	z-index: 3;
+}
+
+.destaque__texto h2{
+	font-size: 35px;
+	padding-top: 150px;
+}
+
+.destaque__texto h3{
+	margin: 20px 0;
+	font-size: 25px;
+}
+
+.destaque__texto p{
+	font-size: 20px;
+	width: 50%;
+}
+
+.destaque__texto a{
+	background-color: rgba(100,100,100,0.3);
+	color: white;
+	display: inline-block;
+	font-size: 18px;
+	margin-right: 15px;
+	padding: 8px 2%;
+	text-decoration: none;
+}
+
+.destaque__texto a:hover{
+	background-color: #fff;
+	color: #000;
+}
+/****************************************************/
+
+/* Vitrine */
+.vitrine-flex{
+	margin-left: 4%;
+	position: relative;
+	width: 96%;
+	z-index: 4;
+}
+
+.vitrine-single-banner{
+	float: left;
+	padding-top: calc(16.6% / 2);
+	position: relative;
+	width: 100%;
+}
+
+.vitrine-wraper{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	height: 100%;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+
+.vitrine-wraper:hover {
+	transition: 1s;
+	transform: scale(1.2,1.2);
+}
+/**/
+
+@media screen and (max-width: 768px){
+	
+	.menu-header{display:none;}
+
+	.vitrine__flex{width:100%;margin:0;}
+
+	.vitrine__single{width:33.3%;padding-top:33.3%;}
+
+}

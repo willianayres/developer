@@ -1,0 +1,135 @@
+/* Reset ----------------------------------------------------- */
+*{box-sizing:border-box;font-family:'Open Sans',sans-serif;margin:0;padding:0;}
+
+html,body{height:100%;}
+
+/* Default --------------------------------------------------- */
+.clear{clear:both;}
+
+.container{
+	margin: 0 auto;
+	max-width: 1280px;
+	padding: 0 2%;
+}
+
+.left{float:left;}
+
+.right{float:right;}
+/* Header ---------------------------------------------------- */
+header{
+	background-color: #42a5f5;
+	height: 60px;
+	padding: 20px 0;
+}
+
+header .logo{
+	font-size: 23px;
+	line-height: 23px;
+}
+
+header .logo a{
+	color: #eee;
+	text-decoration: none;
+}
+
+header nav ul{list-style-type:none;}
+
+header nav ul li{
+	display: inline-block;
+	font-size: 18px;
+	line-height: 23px;
+	padding: 0 15px;
+}
+
+header nav ul li a{
+	color: #eee;
+	text-decoration: none;
+}
+
+header nav ul li a:hover{text-decoration:underline;}
+/* Main ------------------------------------------------------ */
+section{padding:40px 15px;}
+
+section.title{height: 115px;}
+
+section.home,section.about,section.contact{
+	height: calc(100% - 235px);
+}
+
+section > .container > .content > h2{
+	color: #4b4b4b;
+	font-size: 22px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+section > .container > .content p{
+	color: #4b4b4b;
+	font-size: 16px;
+	font-weight: 400;
+	margin-top: 15px;
+}
+
+section.title{
+	background-color: #1e88e5;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+section.title h1{
+	color: #fff;
+	display: inline-block;
+	border-top: 3px solid #fff;
+	width: 150px;
+}
+
+section > .container > .content > form input[type=text],
+section > .container > .content > form textarea{
+	display: block;
+	height: 40px;
+	margin: 15px 0;
+	outline: 0;
+	padding-left: 8px;
+	width: 100%;
+}
+
+section > .container > .content > form textarea{
+	height: 120px;
+	padding: 10px;
+	resize: vertical;
+}
+
+section > .container > .content > form input[type=submit]{
+	background-color: #42a5f5;
+	border: 0;
+	color: #eee;
+	cursor: pointer;
+	height: 40px;
+	width: 100px;
+}
+
+section.about p{
+	margin-bottom: 50px;
+}
+
+section.contact{
+	text-align:center;
+}
+
+section.contact form{
+	display: inline-block;
+	margin: 0 auto;
+	max-width: 600px;
+	width: 100%;
+}
+/* Footer ---------------------------------------------------- */
+footer{
+	background-color: #42a5f5;
+	bottom: 0;
+	color: #fff;
+	height: 60px;
+	padding: 20px 0;
+	position: fixed;
+	text-align: center;
+	width: 100%;
+}

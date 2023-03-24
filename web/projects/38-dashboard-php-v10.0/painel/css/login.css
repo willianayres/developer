@@ -1,0 +1,62 @@
+/* Login  --------------------------------------------------------- */
+.login{
+	background-color: #FFF;
+	box-shadow: 10px 10px 5px rgb(200,200,200);
+	left: 50%;
+	max-width: 600px;
+	padding: 60px 2%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 95%;
+}
+
+.login h2{
+	color: #000;
+	font-size: 19px;
+	font-weight: 400;
+	margin: 10px 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.login input[type=text],
+.login input[type=password]{
+	border: 1px solid #CCC;
+	height: 40px;
+	margin-top: 8px;
+	padding-left: 8px;
+	width: 100%;
+}
+
+.login .form-box:nth-of-type(2){
+	position: relative;
+	top: 15px;
+}
+
+.login .form-box label{
+	color: #000;
+	font-size: 13px;
+	font-weight: 300;
+	padding-right: 6px;
+}
+
+.login input[type=submit]{
+	background-color: #00BFA5;
+	border: 0;
+	color: #FFF;
+	cursor: pointer;
+	font-size: 14px;
+	height: 40px;
+	margin-top: 10px;
+	width: 100px;
+}
+
+.login-error{
+	background-color: #F75353;
+	color: #FFF;
+	font-size: 15px;
+	padding: 8px 2%;
+	text-align: center;
+	width: 100%;
+}

@@ -1,0 +1,51 @@
+/* Header - List-Buildings ---------------------------------------- */
+section.list-buildings{
+	padding: 30px 0;
+	width: 100%;
+}
+
+section.list-buildings .title-search{
+	border-bottom: 2px solid #CCC;
+    color: #646464;
+    font-size: 22px;
+    font-weight: 400;
+    padding: 5px 0;
+    margin-bottom: 20px;
+}
+
+section.list-buildings .row-buildings{
+	display: flex;
+	flex-wrap: nowrap;
+    margin: 15px 0;
+}
+
+section.list-buildings .row-buildings .row1{
+	width: 30%;
+}
+
+section.list-buildings .row-buildings .row1 img{
+    display: block;
+	max-width: 100%;
+    width: 100%;
+}
+
+section.list-buildings .row-buildings .row2{
+    background-color: #E1E1E1;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: #646464;
+    font-size: 16px;
+    padding: 20px;
+	width: 70%;
+}
+
+section.list-buildings .row-buildings .row2 p{
+    border-bottom: 1px dashed #646464;
+    padding: 8px 0;
+}
+
+section.list-buildings .row-buildings .row2 p i{
+    text-align: center;
+    width: 20px;
+}
+/* ---------------------------------------------------------------- */

@@ -1,0 +1,151 @@
+/* Painel > Listar Boxes ------------------------------------------ */
+
+.boxes{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.boxes .boxes-wraper{
+	padding: 20px;
+	width: 33.3%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.boxes .boxes-wraper2{
+	border: 1px solid #CCC;
+}
+
+.boxes .boxes-wraper .box-single{
+	border: 1px solid #CCC;
+	height: 100%;
+	overflow-x: auto;
+	width: 100%;
+}
+
+.boxes .boxes-wraper .box-single-divide{
+	border: 0;
+	border-right: 1px dotted #CCC;
+	width: 70%;
+}
+
+.boxes .boxes-wraper .box-imgs{
+	width: 30%;
+	float: right;
+}
+
+.boxes .boxes-wraper .box-imgs img{
+	width: 100%;
+}
+
+.boxes .boxes-wraper .box-single .top{
+	border-bottom: 1px solid #CCC;
+	color: #CCC;
+	padding: 8px 0;
+	text-align: center;
+}
+
+.boxes .boxes-wraper .box-single .top img{
+	display: block;
+	margin: 0 auto;
+	max-width: 150px;
+}
+
+.boxes .boxes-wraper .box-single .top h2{
+	font-size: 36px;
+}
+
+.boxes .boxes-wraper .box-single .body{
+	padding: 10px;
+	word-break: break-all;
+}
+
+.boxes .boxes-wraper .box-single .body p{
+	color: #646464;
+	font-size: 15px;
+	margin-bottom: 8px;
+}
+
+.boxes .boxes-wraper .box-single .body span{
+	color: #646464;
+	display: block;
+	font-size: 15px;
+	margin-bottom: 8px;
+	padding-left: 25px;
+	border-bottom: 1px dashed #EEE;
+}
+
+.boxes .boxes-wraper .box-single .body p i{
+	text-align: center;
+	width: 20px;
+}
+
+.boxes .boxes-wraper .box-single .body .buttons{
+	margin-top: 15px;
+	text-align: center;
+}
+
+.boxes .boxes-wraper .box-single .body .buttons a{
+	color: #FFF;
+	display: inline-block;
+	padding: 3px 8px;
+	text-decoration: none;
+}
+
+.boxes .boxes-wraper .box-single .body .buttons a.edit{
+	background-color: #F4B03E;
+}
+
+.boxes .boxes-wraper .box-single .body .buttons a.del,
+.boxes .boxes-wraper .box-single .body .buttons a.delete{
+	background-color: #E05C4E;
+}
+
+.boxes .boxes-wraper .box-single .body .buttons-middle{
+	border-bottom: 1px dashed #EEE;
+	padding: 8px 0;
+}
+
+.boxes .boxes-wraper .box-single .body .buttons-middle > form{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.boxes .boxes-wraper .box-single .body .buttons form > input[type=number]{
+	width: 100%;
+	max-width: 100%;
+}
+
+.boxes .boxes-wraper .box-single .body .buttons form > input[type=submit]{
+	background-color: #0091EA;
+	border: 0;
+	color: #FFF;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 15px;
+	max-width: 100%;
+	padding: 3px 8px;
+	width: auto;
+}
+/* ---------------------------------------------------------------- */
+
+/* Responsive ----------------------------------------------------- */
+@media screen and (max-width: 1080px){
+
+	.boxes .boxes-wraper{
+		min-height: 0;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 500px){
+
+	.boxes .boxes-wraper .box-imgs{
+		width: 100%;
+	}
+
+	.boxes .boxes-wraper .box-single-divide{
+		width: 100%;
+	}
+}

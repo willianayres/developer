@@ -1,0 +1,46 @@
+*{box-sizing:border-box;margin:0;padding:0;}
+
+html,body{height:100%;background-color:#773e77;}
+
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	max-width: 1100px;
+	padding: 0 2%;
+}
+
+.anotacao{
+	padding: 10px;
+	width: 33.3%;
+}
+
+.anotacao textarea{
+	background-color: #ffe499;
+	color: black;
+	font-weight: bold;
+	height: 140px;
+	padding: 10px;
+	resize: vertical;
+	width: 100%;
+}
+
+.btn-add{
+	background-color: #fff;
+	border-radius: 30px;
+	bottom: 10px;
+	color: #773e77;
+	cursor: pointer;
+	font-size:30px;
+	font-weight:bold;
+	height: 60px;
+	line-height: 60px;
+	position: fixed;
+	right: 10px;
+	text-align: center;
+	width: 60px;
+}
+
+@media screen and (max-width: 768px){
+	.anotacao{width:100%;}
+}

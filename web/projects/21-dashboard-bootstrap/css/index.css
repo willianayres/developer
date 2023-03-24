@@ -1,0 +1,230 @@
+*{box-sizing:border-box;margin:0;padding:0;}
+
+input:focus,textarea:focus{outline:0;padding-left:8px;}
+
+main{
+	position: relative;
+	top: 30px;
+}
+/* Banner ------------------------------------------------ */
+section.banner{
+	background-image: url('../images/bg.jpg');
+	background-position: center;
+	background-size: cover;
+	min-height: 400px;
+	padding: 200px 0;
+	position: relative;
+	width: 100%;
+}
+
+section.banner > .container {
+	position: relative;
+	z-index: 2;
+}
+
+section.banner > .overlay{
+	background-color: rgba(15,15,15,.3);
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+section.banner > .container h2{
+	color: #26a599;
+	font-size: 50px;
+}
+
+section.banner > .container p{
+	color: #fff;
+	font-size: 21px;
+	margin: 24px 0;
+}
+
+section.banner > .container a{
+	background-color: #26a69a;
+	border-radius: 3px;
+	color: #fff;
+	display: inline-block;
+	font-size: 19px;
+	padding: 10px 18px;
+}
+/* Register ---------------------------------------------- */
+section.register{
+	background-color: #26a69a;
+	padding-top: 34px;
+	padding-bottom: 20px;
+}
+
+section.register h2{
+	color: #fff;
+	font-size: 24px;
+	line-height: 24px;
+	position: relative;
+	top: -16px;
+}
+
+section.register form{
+	vertical-align: middle;
+}
+
+section.register input{
+	border: 1px solid #ccc;
+	height: 40px;
+	vertical-align: middle;
+	width: 85%;
+}
+
+section.register input[type=text]{
+	padding-left: 8px;
+}
+
+section.register input[type=submit]{
+	width: 15%;
+}
+/* Testimony --------------------------------------------- */
+section.testimony{
+	padding: 40px 0;
+}
+
+section.testimony h2, section.testimony blockquote{
+	color: #4b4b4b;
+}
+
+section.testimony blockquote{
+	font-size: 16px;
+}
+/* Differential ------------------------------------------ */
+section.differential{
+	background-color: rgb(225,225,225);
+	padding: 20px 0;
+}
+
+section.differential > h2{
+	color: #4b4b4b;
+}
+
+section.differential > .container{
+	margin-top: 30px;
+}
+
+section.differential > .container h2{
+	font-size: 24px;
+}
+
+section.differential h3{
+	color: #26a69a;
+}
+/* Members ----------------------------------------------- */
+section.members h2{
+	background-color: #26a69a;
+	color: #fff;
+	margin: 0;
+	padding: 10px 2%;
+}
+
+section.members > .container{
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+
+section.members .box{
+	border: 1px solid #ccc;
+	box-shadow: 8px 7px 5px -3px rgba(20,20,20,.6);
+	margin-bottom: 15px;
+	min-height: 250px;
+	padding: 20px 10px;
+	width: 100%;
+}
+
+section.members .box .img{
+	left: 50%;
+	padding-top: 100%;
+	position: relative;
+	transform: translateX(-50%);
+	width: 100%;
+}
+
+section.members .box .user{
+	border-radius: 50%;
+	background-color: #ccc;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+section.members .box .user > span{
+	color: rgb(110,110,110);
+	font-size: 20px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+/* Contact ----------------------------------------------- */
+section.contact{
+	border-top: 2px solid #ccc;
+	color: #4b4b4b;
+	padding-bottom: 40px;
+	padding-top: 40px;
+}
+
+section.contact .col-md-6 > h2{
+	font-size: 26px;
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+section.contact textarea{
+	height: 120px;
+	resize: vertical;
+}
+/* Footer ------------------------------------------------ */
+footer{
+	background-color: rgb(225,225,225);
+	padding: 20px 2%;
+}
+
+footer p{
+	font-size: 20px;
+	margin: 0;
+}
+/* Responsive -------------------------------------------- */
+@media screen and (max-width: 1024px){
+	section.register h2{top:0}
+
+	section.members .box .img{
+		padding-top: 40%;
+		position: relative;
+		width: 40%;
+	}
+
+	section.members .box .user > span{
+		font-size: 50%;
+		top: 0;
+		transform: translateY(0);
+	}
+
+	section.contact .col-md-6 > h2{margin-top:20px;}
+}
+
+@media screen and (max-width: 1005px){
+	section.members .box .user > span{
+		font-size: 300%;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+
+@media screen and (max-width: 500px){
+	section.banner > .container h2{font-size:35px;}
+
+	section.register input[type=submit]{
+		display: inline-block;
+		margin-top: 8px;
+		width: 200px;
+	}
+}

@@ -1,0 +1,797 @@
+/* Reset + Default -------------------------------------------------------------- */
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height: 100%;
+    overflow-x: hidden;
+}
+
+input:focus,
+textarea{
+    outline: 0;
+}
+
+input:checked,
+input:enabled,
+input:selected{
+    border: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.clear{
+    clear: both;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 0 2%;
+}
+
+.line-text{
+    color: #52AAA7;
+    display: inline-block;
+    position: relative;
+}
+
+.line-text > .line{
+    background-color: #52AAA7;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 35%;
+}
+
+.line-text h2{
+    font-size: 27px;
+    font-weight: 400;
+}
+/* ------------------------------------------------------------------------------ */
+
+/* Header ----------------------------------------------------------------------- */
+header{
+    height: 50px;
+    line-height: 50px;
+}
+
+header > .container{
+    display: flex;
+}
+
+header .logo{
+    text-align: left;
+    width: 20%;
+}
+
+header .logo h2{
+    font-size: 23px;
+    font-weight: 400;
+}
+
+header .logo a{
+    color: #000;
+}
+
+header nav.desktop{
+    text-align: right;
+    width: 80%;
+}
+
+header nav.desktop ul{
+    list-style-type: none;
+}
+
+header nav.desktop ul li{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 0 20px;
+}
+
+header nav.desktop ul li.selected{
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+header nav.desktop ul li a{
+    color: #000;
+    display: block;
+}
+
+header nav.desktop ul li a:hover{
+    text-decoration: underline;
+}
+
+header nav.mobile{
+    display: none;
+    text-align: right;
+    width: 80%;
+}
+
+header nav.mobile h2{
+    cursor: pointer;
+}
+
+header nav.mobile ul{
+    background-color: #FFF;
+    display: none;
+    left: 0;
+    list-style-type: none;
+    position: absolute;
+    text-align: center;
+    top: 51px;
+    width: calc(100% - 15px);
+    z-index: 5;
+}
+
+header nav.mobile ul li{
+    border-bottom: 1px solid #000;
+    display: block;
+    padding: 5px 0;
+}
+
+header nav.mobile ul li:hover{
+    background-color: #EEE;
+}
+
+header nav.mobile ul li.selected{
+    background-color: #EEE;
+    font-weight: 700;
+}
+
+header nav.mobile ul li a{
+    color: #000;
+    display: block;
+}
+/* ------------------------------------------------------------------------------ */
+
+/* Banner ----------------------------------------------------------------------- */
+section.banner{
+    background-image: url('../images/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100% - 50px);
+    max-height: 500px;
+    padding: 100px 0;
+    position: relative;
+    width: 100%;
+}
+
+section.banner > .container{
+    position: relative;
+    z-index: 2;
+}
+
+section.banner .overlay{
+    background-color: #000;
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+section.banner h2{
+    color: #52AAA7;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+}
+
+section.banner p{
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 15px;
+    text-align: justify;
+}
+/* ------------------------------------------------------------------------------ */
+
+/* Diferentials ----------------------------------------------------------------- */
+section.diferentials{
+    padding: 30px 0;
+    text-align: center;
+}
+
+section.diferentials .icons{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 35px 0;
+}
+
+.diferentials .icons .box-single{
+    margin: 0 5px;
+    padding: 0 10px;
+    width: calc(33.3% - 10px);
+}
+
+.diferentials .icons .box-single h2{
+    color: #8A6B62;
+    font-size: 40px;
+}
+
+.diferentials .icons .box-single p{
+    color: #646464;
+    font-size: 16px;
+    font-weight: 300;
+}
+/* ------------------------------------------------------------------------------ *
+
+/* About-Home ------------------------------------------------------------------- */
+section.about-home{
+    background-color: #E1E1E1;
+    padding: 30px 0;
+}
+
+section.about-home > .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.about-home .col{
+    width: 50%;
+}
+
+section.about-home .col .avatar{
+    margin-top: 15px;
+}
+
+section.about-home .col .avatar .img{
+    background-image: url('../images/avatar.jpg');
+    background-size: 100% 100%;
+    border-radius: 50%;
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+}
+
+section.about-home .col .avatar .description{
+    display: inline-block;
+    padding: 0 10px;
+    width: calc(100% - 85px);
+}
+
+section.about-home .col .avatar .description h3{
+    color: #1E1E1E;
+    font-style: italic;
+    font-weight: 400;
+}
+
+section.about-home .col .avatar .description p{
+    color: #1E1E1E;
+    font-weight: 300;
+}
+
+section.about-home .col p{
+    color: #000;
+    font-size: 16px;
+    margin-top: 10px;
+}
+/* ------------------------------------------------------------------------------ */
+
+/* Subscription ----------------------------------------------------------------- */
+section.subscription{
+    background-color: #52AAA7;
+    padding: 20px 0;
+}
+
+section.subscription > .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.subscription .col{
+    color: #FFF;
+    text-align: center;
+    width: 50%;
+}
+
+section.subscription .col h2{
+    font-weight: 400;
+    line-height: 40px;
+}
+
+section.subscription .col form input[type="text"]{
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    display: inline-block;
+    height: 40px;
+    padding-left: 8px;
+    width: calc(100% - 120px);
+}
+
+section.subscription .col form input[type="submit"]{
+    background-color: #1D6C64;
+    border: 0;
+    color: #FFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 400;
+    height: 40px;
+    position: relative;
+    top: 2px;
+    width: 120px;
+}
+/* ------------------------------------------------------------------------------ */
+
+/* Cards ------------------------------------------------------------------------ */
+section.cards{
+    padding: 30px 0;
+}
+
+section.cards > .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.cards .card-single{
+    border-bottom: 2px solid #CCC;
+    margin: 0 10px;
+    padding: 30px;
+    width: calc(33.3% - 20px);
+}
+
+section.cards .card-single img{
+    height: 100%;
+    max-height: 200px;
+    max-width: 100%;
+    min-height: 200px;
+    width: 100%;
+}
+
+section.cards .card-single h3{
+    font-size: 19px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+section.cards .card-single p{
+    font-size: 16px;
+    font-weight: 300;
+    margin: 10px 0;
+    padding-bottom: 20px;
+}
+/* ------------------------------------------------------------------------------ */
+
+/* Footer ----------------------------------------------------------------------- */
+footer.footer1{
+    background-color: #52AAA7;
+    color: #FFF;
+    padding: 20px 2%;
+}
+
+footer.footer1 a{
+    color: #FFF;
+    display: block;
+}
+
+footer.footer1 > .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer.footer1 .col{
+    margin: 0 10px;
+    width: calc(33.3% - 20px);
+}
+
+footer.footer1 .col h2{
+    font-size: 23px;
+    font-weight: 400;
+}
+
+footer.footer1 .col p{
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+footer.footer1 .col .group a{
+    display: inline-block;
+    font-size: 18px;
+    margin: 15px 10px;
+}
+
+footer{
+    background-color: #237a70;
+    color: #FFF;
+    text-align: center;
+    padding: 20px 2%;
+}
+/* ------------------------------------------------------------------------------ */
+
+/* About > Banner --------------------------------------------------------------- */
+section.about-banner{
+    background-image: url('../images/img3.jpg');
+    height: initial;
+    min-height: 200px;
+    padding: 40px 0;
+}
+
+section.about-banner h2{
+    text-align: left
+}
+/* ------------------------------------------------------------------------------ */
+
+/* About > Notice --------------------------------------------------------------- */
+section.about-notice{
+    padding: 30px 0;
+}
+
+section.about-notice .notice-single img{
+    float: left;
+    max-width: 100%;
+    width: 50%;
+}
+
+section.about-notice .notice-single p{
+    float: left;
+    font-weight: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    width: 50%;
+}
+
+section.about-notice .notice-single p.w100{
+    padding: 10px 0;
+    margin: 5px 0 10px 0;
+    width: 100%;
+}
+/* ------------------------------------------------------------------------------ */
+
+/* About > Parallax ------------------------------------------------------------- */
+section.about-parallax{
+    background-attachment: fixed;
+    background-image: url('../images/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    min-height: 200px;
+    padding: 30px 0;
+    text-align: center;
+    width: 100%;
+}
+
+section.about-parallax h2{
+    border: 1px solid #44D4C5;
+    color: #44D4C5;
+    display: inline-block;
+    font-size: 18px;
+    padding: 5px 25px;
+}
+
+section.about-parallax p{
+    color: #FFF;
+    margin-top: 10px;
+}
+/* ------------------------------------------------------------------------------ */
+
+/* About > Parallax ------------------------------------------------------------- */
+section.about-team{
+    padding: 30px 0;
+}
+
+section.about-team .circles{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+section.about-team .circles .circle-single{
+    margin: 0 10px;
+    padding: 15px;
+    text-align: center;
+    width: calc(33.3% - 20px);
+}
+
+section.about-team .circles .circle-single h3{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+section.about-team .circles .circle-single p{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+section.about-team .circles .circle-single .avatar-wraper{
+    margin: 0 auto;
+    padding-top: 60%;
+    position: relative;
+    width: 60%;
+}
+
+section.about-team .circles .circle-single .avatar-wraper .avatar{
+    background-color: #888;
+    background-image: url('../images/avatar.jpg');
+    background-size: 100% 100%;
+    border-radius: 50%;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+/* ------------------------------------------------------------------------------ */
+
+/* About > History -------------------------------------------------------------- */
+section.about-history{
+    background-color: #E6E6E6;
+    border-top: 2px solid #D2D2D2;
+    padding: 30px 0;
+}
+
+section.about-history > .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.about-history .col{
+    padding: 10px 15px;
+    width: 50%;
+}
+
+section.about-history .col p{
+    color: #000;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.card-text{
+    margin: 10px 0;
+    position: relative;
+    width: 80%;
+}
+
+.card-text img{
+    max-width: 100%;
+}
+
+.card-text h3{
+    bottom: 10px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    right: 10px;
+}
+/* ------------------------------------------------------------------------------ */
+
+/* Contact > Banner ------------------------------------------------------------- */
+section.contact-banner{
+    background-image: url('../images/img3.jpg');
+    height: initial;
+    min-height: 200px;
+    padding: 40px 0;
+}
+
+section.contact-banner h2{
+    text-align: left
+}
+/* ------------------------------------------------------------------------------ */
+
+/* Contact ---------------------------------------------------------------------- */
+section.contact{
+    min-height: 300px;
+    padding: 30px 0;
+}
+
+section.contact > .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.contact .col1{
+    width: 60%;
+}
+
+section.contact .col1 h2{
+    background-color: #DDD;
+    border-left: 5px solid #CCC;
+    color: #ACAC9D;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 10px 0;
+    text-align: center;
+}
+
+section.contact .col1 form{
+    margin-top: 20px;
+}
+
+section.contact .col1 form input[type="text"],
+section.contact .col1 form input[type="email"]{
+    border:  1px solid #CCC;
+    float: left;
+    height: 40px;
+    margin: 10px 0;
+    padding-left: 8px;
+    width: calc(50% - 20px);
+}
+
+section.contact .col1 form input[type="text"]:nth-of-type(2){
+    float: right;
+}
+
+section.contact .col1 form input[type="email"]{
+    width: 100%;
+}
+
+section.contact .col1 form textarea{
+    border:  1px solid #CCC;
+    height: 120px;
+    margin: 10px 0;
+    padding: 8px;
+    resize: vertical;
+    width: 100%
+}
+
+section.contact .col1 form input[type="submit"]{
+
+}
+
+section.contact .col2{
+    padding: 0 30px;
+    width: 40%;
+}
+
+section.contact .col2 h2{
+    font-weight: 400;
+}
+
+section.contact .col2 p{
+    font-weight: 300;
+}
+
+section.contact .col2 p.tel{
+    background-color: #249B8F;
+    color: #FFF;
+    margin-top: 10px;
+    padding: 8px 4px;
+    text-align: center;
+}
+/* ------------------------------------------------------------------------------ */
+
+/* Responsive ------------------------------------------------------------------- */
+@media screen and (max-width: 768px){
+    /* Header -------------------- */
+    header nav.desktop{
+        display: none;
+    }
+    header nav.mobile{
+        display: block;
+    }
+    /* Banner -------------------- */
+    section.banner{
+        height: auto;
+        max-height: initial;
+    }
+    /* Diferentials -------------- */
+    .diferentials .icons .box-single{
+        margin: 10px 5px;
+        width: calc(100% - 10px);
+    }
+    /* About-Home ---------------- */
+    section.about-home{
+        text-align: center;
+    }
+    section.about-home .col{
+        margin: 10px 0;
+        width: 100%;
+    }
+    section.about-home .col:nth-of-type(2){
+        margin-top: 50px;
+    }
+    section.about-home .col p,
+    section.about-home .col .avatar{
+        text-align: justify;
+    }
+    /* Subscription --------------- */
+    section.subscription .col{
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    /* Cards ---------------------- */
+    section.cards .card-single{
+        margin: 20px 0;
+        padding: 25px;
+        width: 100%;
+    }
+    section.cards .card-single img{
+        height: initial;
+        max-height: initial;
+        max-width: 100%;
+        min-height: initial;
+    }
+    /* Footer -------------------- */
+    footer.footer1 .col{
+        margin: 20px;
+        text-align: center;
+        width: 100%;
+    }
+    /* About > Notice ------------ */
+    section.about-notice .notice-single img{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    section.about-notice .notice-single p,
+    section.about-notice .notice-single p.w100{
+        margin-bottom: 10px 0;
+        padding: 0;
+        width: 100%;
+    }
+    /* About > Parallax ---------- */
+    section.about-team > .container{
+        text-align: center;
+    }
+    section.about-team .circles .circle-single{
+        margin: 20px 0;
+        width: 100%
+    }
+    /* About > History ----------- */
+    section.about-history .col{
+        width: 100%;
+    }
+    /* Contact ------------------- */
+    section.contact .col1{
+        width: 100%;
+    }
+
+    section.contact .col2{
+        margin: 20px 0;
+        padding: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px){
+     /* Default ------------------ */
+    .line-text > .line{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    /* About-Home ---------------- */
+    section.about-home .col .avatar .img{
+        display: block;
+        margin: 0 auto;
+    }  
+    section.about-home .col .avatar .description{
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+    /* Subscription --------------- */
+    section.subscription .col form input[type="text"]{
+        display: block;
+        width: 100%
+    }
+    section.subscription .col form input[type="submit"]{
+        display: block;
+        margin: 20px auto;
+        position: initial;
+        top: 0px;
+    }
+    /* Cards ---------------------- */
+    section.cards .card-single{
+        padding: 10px;
+    }
+    /* About > History ----------- */
+    .card-text{
+        width: 100%;
+    }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
+        <meta name="author" content="Willian Joris Ayres" />
+        <meta name="description" content="Landing Page para Portfólio de Willian." />
+        <meta name="keyword" content="project,projeto,landingpage,website,webdesign,css,html" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet" />
+        <link href="css/index.css" rel="stylesheet" />
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+        <title>Landing Page</title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <h2><a href="index.html">Logomarca</a></h2>
+                </div>
+                <nav class="desktop">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li class="selected"><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav><!--desktop-->
+                <nav class="mobile">
+                    <h2><i class="fa-solid fa-bars"></i></h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li class="selected"><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav><!--mobile-->
+            </div><!--container-->
+        </header>
+        <section class="banner contact-banner">
+            <div class="overlay"></div><!--overlay-->
+            <div class="container">
+                <h2>Contato</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+            </div><!--container-->
+        </section><!--banner-->
+        <section class="contact">
+            <div class="container">
+                <div class="col1">
+                    <h2>Entre em contato que estaremos respondendo o mais breve o possível!</h2>
+                    <form method="post">
+                        <input type="text" name="name" placeholder="Name..." required />
+                        <input type="text" name="nickname" placeholder="Sobrenome..." required />
+                        <input type="email" name="email" placeholder="E-mail..." required />
+                        <textarea name="msg" placeholder="Sua mensagem..."></textarea>
+                        <input type="submit" name="send" value="Enviar" />
+                    </form>
+                    <div class="clear"></div><!--clear-->
+                </div><!--col1-->
+                <div class="col2">
+                    <h2><i class="fa-solid fa-comment"></i> Fale com a nossa equipe!</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+                    <p class="tel"><i class="fa-solid fa-phone"></i> (41) 99637-2502</p>
+                    <p class="tel"><i class="fa-solid fa-phone"></i> (41) 99637-2502</p>
+                    <p class="tel"><i class="fa-solid fa-phone"></i> (41) 99637-2502</p>
+                </div><!--col2-->
+            </div><!--container-->
+        </section><!--contact-->
+        <footer class="footer1">
+            <div class="container">
+                <div class="col">
+                    <h3>Onde estamos?</h3>
+                    <p><i class="fa-solid fa-map-pin"></i> Rua Heitor Baggio Vidal, 2378, Sobrado 3. Curitiba - PR.</p>
+                    <p><i class="fa-solid fa-phone"></i> (41) 99637-2502</p>
+                </div><!--col-->
+                <div class="col">
+                    <h3>Links Úteis</h3>
+                    <a href="https://aw-freela.github.io/site">AW-Freela</a>
+                    <a href="https://www.w3schools.com">W3Schools</a>
+                </div><!--col-->
+                <div class="col">
+                    <h3>Conecte-se conosco</h3>
+                    <div class="group">
+                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div><!--group-->
+                </div><!--col-->
+            </div><!--container-->
+        </footer><!--footer1-->
+        <footer>
+            <div class="container">
+                Todos os direitos reservados!
+            </div><!--container-->
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

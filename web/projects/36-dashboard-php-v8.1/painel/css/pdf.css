@@ -1,0 +1,25 @@
+/* Painel > PDF Generator ----------------------------------------- */
+.pdf{
+	max-width: 150px;
+}
+
+.pdf a{
+	background-color: #E05C4E;
+	border: 0;
+	border-radius: 5px;
+	color: #FFF;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 15px;
+	height: 30px;
+	margin-top: 10px;
+	padding: 5px 10px;
+	text-decoration: none;
+	width: auto;
+	/*width: 100px;*/
+}
+
+.pdf a i{
+	padding-right: 5px;
+}
+/* ---------------------------------------------------------------- */

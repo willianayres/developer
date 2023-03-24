@@ -1,0 +1,32 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,body{
+	height: 100%;
+}
+
+.container{
+	margin: 0 auto;
+	max-width: 1280px;
+	text-align: center;
+	padding: 0 2%;
+}
+
+.clear{
+	clear: both;
+}
+
+.alert{
+	margin: 10px 0;
+	padding: 8px 15px;
+	width: 100%;
+}
+
+.success{
+	background-color: #DFF0D8;
+	border: 1px solid #3C763D;
+	color: #3C763D;
+}

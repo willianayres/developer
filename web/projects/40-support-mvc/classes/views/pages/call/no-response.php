@@ -1,0 +1,1 @@
+<p>Aguarde até ter uma respota do admin para continuar com o chamado!</p>

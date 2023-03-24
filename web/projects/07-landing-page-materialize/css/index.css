@@ -1,0 +1,55 @@
+.icon-block{padding:0 15px;}
+
+.icon-block .material-icons {font-size:inherit;}
+
+nav ul a, nav .brand-log{color:white;}
+
+.section1{
+	min-height: 400px;
+	position: relative;
+}
+
+.form-container{
+	background: white;
+	left: 50%;
+	margin: 40px 0;
+	max-width: 700px;
+	padding: 15px 2%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+}
+
+.custom-title{position:relative;}
+
+.custom-title h2{
+	background: white;
+	color: #777;
+	display: inline-block;
+	font-size: 26px;
+	padding-right: 10px;
+	position: relative;
+	z-index: 2;
+}
+
+.custom-title > div{
+	background: #999;
+	height: 3px;
+	left: 0;
+	position: absolute;
+	top: 45px;
+	width: 100%;
+	z-index: 1;
+}
+
+.offset-equipe{
+	position: relative;
+	top: 85px;
+}
+
+@media screen and (max-width: 768px){
+
+	.offset-equipe{top:0;}
+
+}

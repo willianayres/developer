@@ -1,0 +1,190 @@
+/* Header --------------------------------------------------------- */
+section.header-buildings{
+    background-color: #393E6E;
+    border-top: 1px dotted rgba(30,30,30,0.2);
+    border-bottom: 1px solid rgba(30,30,30,0.2);
+    margin: 0 auto;
+    text-align: center;
+}
+
+section.header-buildings nav{
+    display: inline-block;
+    padding: 20px 0;
+    text-align: center;
+}
+
+section.header-buildings p{
+    color: #FFF;
+    cursor: pointer;
+    display: inline-block;
+    padding: 20px 0;
+    text-align: center;
+    width: 60px;
+}
+
+
+section.header-buildings nav.desktop  ul li{
+    display: inline-block;
+    font-size: 15px;
+    padding: 0 15px;
+    position: relative;
+    top: -10px;
+}
+
+
+section.header-buildings nav ul li a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+section.header-buildings nav ul li a:hover{
+    text-decoration: underline;
+}
+/* ---------------------------------------------------------------- */
+
+/* Header - Search-1 ---------------------------------------------- */
+section.search-1{
+    background-color: #333864;
+    border-bottom: 1px dotted rgba(244,11,92,0.4);
+    color: #FFF;
+    padding: 30px 0;
+    text-align: center;
+}
+
+section.search-1 h2{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+section.search-1 h2 i{
+    color: #F40B5C;
+    font-size: 25px;
+    padding-right: 5px;
+}
+
+section.search-1 input[type=text]{
+    border: 1px solid #CCC;
+    font-size: 17px;
+    height: 40px;
+    margin-top: 15px;
+    padding-left: 8px;
+    width: 100%;
+}
+/* ---------------------------------------------------------------- */
+
+/* Header - Search-2 ---------------------------------------------- */
+section.search-2{
+    background-color: #333864;
+    color: #FFF;
+    padding: 30px 0;
+}
+
+section.search-2 .form-group{
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+
+section.search-2 .form-group label{
+    display: block;
+    margin: 10px 0;
+}
+
+section.search-2 .form-group label i{
+    color: #F40B5C;
+    padding-right: 5px;
+    text-align: center;
+    width: 25px;
+}
+
+section.search-2 .form-group input[type="text"],
+section.search-2 .form-group input[type="number"]{
+    border: 1px solid #CCC;
+    height: 40px;
+    padding: 0 8px;
+    width: 100%;
+}
+/* ---------------------------------------------------------------- */
+
+/* Header - List-Buildings ---------------------------------------- */
+section.list-buildings{
+	padding: 30px 0;
+	width: 100%;
+}
+
+section.list-buildings .title-search{
+	border-bottom: 2px solid #CCC;
+    color: #646464;
+    font-size: 22px;
+    font-weight: 400;
+    padding: 5px 0;
+    margin-bottom: 20px;
+}
+
+section.list-buildings .row-buildings{
+	display: flex;
+	flex-wrap: nowrap;
+    margin: 15px 0;
+}
+
+section.list-buildings .row-buildings .row1{
+	width: 30%;
+}
+
+section.list-buildings .row-buildings .row1 img{
+    display: block;
+	max-width: 100%;
+    width: 100%;
+}
+
+section.list-buildings .row-buildings .row2{
+    background-color: #E1E1E1;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: #646464;
+    font-size: 16px;
+    padding: 20px;
+	width: 70%;
+}
+
+section.list-buildings .row-buildings .row2 p{
+    border-bottom: 1px dashed #646464;
+    padding: 8px 0;
+}
+
+section.list-buildings .row-buildings .row2 p i{
+    text-align: center;
+    width: 20px;
+}
+/* ---------------------------------------------------------------- */
+
+/* Responsive ----------------------------------------------------- */
+@media screen and (max-width: 850px){
+   
+    section.header-buildings p{
+        padding: 15px 0;
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 800px){
+   
+    section.header-buildings nav{
+        padding: 5px 0;
+    }
+
+    section.header-buildings nav ul{
+        position: relative;
+        top: -5px;
+    }
+
+    section.header-buildings p{
+        display: block;
+        margin: 0 auto;
+    }
+
+    section.header-buildings nav.desktop  ul li{
+        display: block;
+        padding: 15px 5px;
+        top: 0px;
+    }
+}

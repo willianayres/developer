@@ -1,0 +1,229 @@
+/* Reset Padrão --------------------------------------------------- */
+*{
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+html,body{
+	background: rgb(225,225,225);
+	height: 100%;
+}
+
+body{
+	overflow-x: hidden;
+}
+
+input:focus, textarea:focus, select:focus{
+	outline: 0;
+}
+/* ---------------------------------------------------------------- */
+
+/* Boot ----------------------------------------------------------- */
+.center{
+	margin: 0 auto;
+	padding: 0 2%;
+	text-align: center;
+}
+.clear{
+	clear: both;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+.w49{
+	width: 49%;
+}
+
+.w50{
+	width: 50%;
+}
+
+.w100{
+	width: 100%;
+}
+/* ---------------------------------------------------------------- */
+
+/* Painel > Menu -------------------------------------------------- */
+.menu{
+	background: #455A64;
+	height: 100%;
+	left: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+	padding: 10px 0;
+	position: fixed;
+	top: 0;
+	width: 250px;
+}
+
+.wraper{
+	width: 250px;
+}
+
+.user{
+	text-align: center;
+}
+
+.user .img{
+	display: inline-block;
+	height: 130px;
+	width: 130px;
+}
+
+.user .img img{
+	border: 3px solid #2F3D42;
+	border-radius: 50%;
+	display: inline-block;
+	height: 130px;
+	position: relative;
+	width: 130px;
+}
+
+.avatar{
+	border-radius: 50%;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.avatar i{
+	color: #2F3D42;
+	font-size: 50px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.name{
+	margin-top: 10px;
+	text-align: center;
+}
+
+.name p{
+	color: #FFF;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.itens{
+	margin-top: 30px;
+}
+
+.itens h2{
+	background-color: #2F3D42;
+	color: #FFF;
+	font-size: 17px;
+	font-weight: 400;
+	padding: 8px;
+	text-align: left;
+}
+
+.itens a{
+	border-bottom: 2px solid #2F3D42;
+	color: #FFF;
+	display: block;
+	font-size: 16px;
+	font-weight: 300;
+	padding: 8px;
+	text-decoration: none;
+}
+
+.selected{
+	background: #3A4B51;
+}
+
+.selected::before{
+	content: '» ';
+}
+/* ---------------------------------------------------------------- */
+
+/* Painel > Header ------------------------------------------------ */
+header{
+	background-color: #78909C;
+	left: 250px;
+	margin-bottom: 15px;
+	padding: 10px 0;
+	position: relative;
+	width: calc(100% - 250px);
+}
+
+.menu-button{
+	color: #FFF;
+	cursor: pointer;
+	font-size: 23px;
+}
+
+.loggout a{
+	color: #FFF;
+	font-size: 17px;
+	padding: 0 20px;
+	position: relative;
+	text-decoration: none;
+	top: 3px;
+}
+
+.loggout a.home{
+	background-color: #60727A;
+	padding: 15px 20px;
+}
+
+.loggout a > span{
+	font-size: 17px;
+	font-weight: 300;
+	text-decoration: none;
+}
+/* ---------------------------------------------------------------- */
+
+/* Responsive ----------------------------------------------------- */
+@media screen and (max-width: 800px){
+
+	.loggout a{
+		padding: 0 10px;
+	}
+}
+
+@media screen and (max-width: 550px){
+
+	.loggout a{
+		font-size: 15px;
+		padding: 0 5px;
+		position: relative;
+		top: 5px;
+	}
+
+	.loggout a.home{
+		padding: 15px 10px;
+	}
+
+	.loggout a > span{
+		font-size: 15px;
+	}
+
+	.w49, .w50{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 400px){
+
+	.menu .wraper{
+		width: 200px;
+	}
+}
+
+@media screen and (max-width: 380px){
+
+	.items a{
+		font-size: 15px;
+	}
+}

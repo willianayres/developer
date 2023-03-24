@@ -1,0 +1,137 @@
+/* Header --------------------------------------------------------- */
+.header-login{
+	background-color: #333864;
+	height: 150px;
+	width: 100%;
+}
+
+.header-login .wraper{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+}
+
+
+.header-login h2:nth-of-type(1){
+	color: #F40B5C;
+	font-size: 35px;
+}
+
+.header-login h2{
+	color: #FFF;
+	font-size: 25px;
+	font-weight: 400;
+	text-align: center;
+}
+
+.header-login h2 > strong{
+	color: #F40B5C;	
+}
+/* ---------------------------------------------------------------- */
+
+/* Login ---------------------------------------------------------- */
+.login{
+	height: calc(100% - 150px);
+	width: 100%;
+}
+
+.login .wraper{
+	margin: 0 auto;
+	max-width: 700px;
+	padding: 60px 2% 30px 2%;
+	width: 100%;
+}
+
+.login form .group{
+	width: 100%;
+}
+
+.login form .group:nth-of-type(2){
+	position: relative;
+	top: -20px;
+}
+
+.login form .group label{
+	color: #888;
+	display: block;
+	font-size: 23px;
+	font-weight: 700;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.login form .group p{
+	background-color: #CCC;
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+	display: inline-block;
+	height: 40px;
+	position: relative;
+	top: -40px;
+	width: 8%;
+}
+
+.login form .group p i{
+	color: #888;
+	font-size: 16px;
+	left: 50%;
+	position: relative;
+	top: 50%;
+	transform: translate(-50%,-60%);
+	-ms-transform: translate(-50%,-50%);
+}
+
+.login form .group input{
+	border: 1px solid #CCC;
+	border-radius: 10px;
+	color: #888;
+	display: inline-block;
+	font-size: 16px;
+	height: 40px;
+	padding-left: 9%;
+	width: 100%;
+}
+
+.login form .group input::placeholder{
+	color: #CCC;
+}
+
+.login form .form-box{
+	position: relative;
+	height: 40px;
+	line-height: 40px;
+	top: -30px;
+}
+
+.login form .form-box a{
+	color: #888;
+}
+
+.login form .form-box input[type="submit"]{
+	background-color: #F40B5C;
+	border-radius: 10px;
+	border: 0;
+	color: #FFF;
+	cursor: pointer;
+	font-weight: 700;
+	height: 40px;
+	margin: 10px 0;
+	width: 115px;
+}
+/* ---------------------------------------------------------------- */
+
+@media screen and (max-width: 400px){
+
+    .header-login{
+        height: 200px;
+    }
+
+    .header-login h2:nth-of-type(1){
+        font-size: 30px;
+    }
+
+    .header-login h2{
+        font-size: 22px;
+    }
+}

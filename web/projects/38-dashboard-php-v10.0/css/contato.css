@@ -1,0 +1,40 @@
+/* Section 5 Contact ---------------------------------------------- */
+#map{
+	height: 400px;
+	width: 100%;
+}
+
+.five-contact .center{
+	padding: 40px 2%;
+	text-align: center;
+}
+
+.five-contact .center input[type="text"],
+.five-contact .center input[type="email"],
+.five-contact .center input[type="tel"],
+.five-contact .center textarea{
+	border: 1px solid #CCC;
+	color: #444;
+	font-size: 16px;
+	height: 40px;
+	margin: 8px 0;
+	max-width: 500px;
+	padding-left: 8px;
+	width: 100%;
+}
+
+.five-contact .center textarea{
+	height: 120px;
+	padding: 8px;
+	resize: vertical;
+}
+
+.five-contact .center input[type="submit"]{
+	background-color: #00C59E;
+	border: 0;
+	color: #FFF;
+	cursor: pointer;
+	height: 40px;
+	width: 140px;
+}
+/* ---------------------------------------------------------------- */

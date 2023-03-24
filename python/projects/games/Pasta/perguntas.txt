@@ -1,0 +1,20 @@
+Quanto eh 2 x 2?;D;1;2;3;4;5
+Quanto eh 2,5 x 2?;E;1;2;3;4;5
+Quanto eh 5 * 9?;A;45;18;54;81;35
+Quanto eh 30 / 5?;C;5;4;6;10;3
+Quanto eh 81 / 9?;D;7;3;6;9;18
+Quanto eh 4 ao cubo?;A;64;16;32;128;40
+Quanto eh 9 * 13?;E;127;137;97;90;117
+Quanto eh 52 / 4?;D;14.5;19.5;13.5;13;14;
+Quanto eh 30 * 7?;E;200;21;190;300;210
+Quanto eh 10 % 90?;A;9;90;10;45;5
+Quanto eh 15 % 1?;B;0.1;0.15;0.2;0.30;0.45
+Qual numero nao eh par?;B;8;9;4;6;100
+Qual numero nao eh primo?;B;2;66;13;11;19
+Qual eh o mair numero?;C;5.5;5;5.55;5.54;2
+Qual eh o menor numero?;E;0.02;0.1;2;0.015;0.01
+Qual eh o maximo divisor comum de 10 e 4?;A;2;5;4;10;1
+Qual eh o maximo divisor comum de 64 e 16?;A;16;8;32;64;6
+Quanto eh 60 % de 90?;B;56;54;52;60;45
+Quanto eh 3 quintos de 100?;E;50;40;30;20;60
+Quanto eh o meu amor pela Anna?;C;10000;100000;infinito;100;0

@@ -1,0 +1,27 @@
+add-user 		-> box; form;
+denied-permission 	-> box;
+edit-category		-> box; form;
+edit-client		-> box; form; pagination;
+edit-notice		-> box; form;
+edit-product		-> 
+edit-service		-> box; form;
+edit-site		-> box; form;
+edit-slide		-> box; form;
+edit-testimony		-> box; form;
+edit-user		-> box; form;
+home			-> box; w100; metrics; left; col; row; w50; table (class);
+list-categories		-> box; wraper-table; table; pagination;
+list-clients		-> box; search; boxes; boxes-wraper; box-single; top; body; buttons; pagination;
+list-notices		-> box; wraper-table; table; pagination;
+list-products		-> box; search; boxes; boxes-wraper; boxes-wraper2; box-imgs; box-single; box-single-divide; buttons; buttons-middle; pagination;
+list-services		-> box; wraper-table; table; pagination;
+list-slides		-> box; wraper-table; table; pagination;
+list-testimonies	-> box; wraper-table; table; pagination;
+payments		-> box; pdf; wraper-table; table; pagination;
+register-category	-> box; form;
+register-client		-> box; form;
+register-notice		-> box; form;
+register-product	-> box; form;
+register-service	-> box; form;
+register-slide		-> box; form;
+register-testimony	-> box; form;

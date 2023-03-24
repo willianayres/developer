@@ -1,0 +1,57 @@
+/* Painel > Métricas ---------------------------------------------- */
+.metrics{
+	margin-top:16px;
+	padding:0 15px;
+}
+
+.metric{
+	background: #F4B03E;
+	border: 5px solid #FFF;
+	position: relative;
+	width: 33.3%;
+}
+
+.metrics .metric:nth-of-type(2){
+	background: #E05C4E;
+}
+
+.metrics .metric:nth-of-type(3){
+	background: #0091EA;
+}
+
+.metrics .metric .wraper{
+	color: #FFF;
+	padding: 10px 20px;
+	text-align: left;
+}
+
+.metrics .metric .wraper h2{
+	font-size: 27px;
+}
+
+.metrics .metric .wraper p{
+	font-size: 25px;
+	padding: 10px 0;
+}
+/* ---------------------------------------------------------------- */
+
+/* Painel > Usuários ---------------------------------------------- */
+.table{
+	font-weight: 300;
+	margin: 20px auto;
+	max-width: 1280px;
+}
+
+.table .row{
+	border-bottom: 1px solid #CCC;
+	color: #777;
+	padding: 8px;
+}
+
+.table .row:nth-of-type(1){
+	background: #00BFA5;
+	color: #FFF;
+	font-weight: normal;
+	padding: 10px;
+}
+/* ---------------------------------------------------------------- */

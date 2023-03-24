@@ -1,0 +1,276 @@
+/* Painel > Conteúdo ---------------------------------------------- */
+.container{
+	left: 250px;
+	padding: 2%;
+	position: relative;
+	width: calc(100% - 250px);
+}
+
+.box{
+	background-color: #FFF;
+	margin-bottom: 25px;
+	overflow-x: auto;
+	padding: 30px;
+}
+
+.box h2{
+	font-size: 22px;
+	font-weight: 300;
+}
+
+.box h2 a{
+	border: 0.2px dashed #000;
+	border-radius: 15px;
+	color: #000;
+	padding: 0 5px;
+	text-decoration: none;
+}
+
+.alert{
+	color: #212121;
+	font-size: 14px;
+	font-weight: 700;
+	margin: 10px 0;
+	padding:8px 0;
+	text-align: center;
+	width: 100%;
+}
+
+.alert a{
+	border: 3px dashed #D1C31B;
+	border-radius: 10px;
+	color: #212121;
+	padding: 5px;
+	text-decoration: none;
+}
+
+.alert a:hover{
+	background-color: #D1C31B;
+	border: 3px dashed #212121;
+}
+
+.error{
+	background-color: #ED7474;
+	border: 2px solid #EB5050;
+}
+
+.success{
+	background-color: #B3FFB5;
+	border: 2px solid #8AFF8D;
+}
+
+.attention{
+	background-color: #FFF691;
+	border: 2px solid #D1C31B;
+}
+/* ---------------------------------------------------------------- */
+
+
+
+/* Painel > Editar ------------------------------------------------ */
+.box form{
+	margin: 30px 0;
+}
+
+.box form .group{
+	margin: 15px 0;
+}
+
+.box form label{
+	color: #000;
+	display: #000;
+	font-size: 17px;
+	font-weight: 300;
+}
+
+.box form input,
+.box form select,
+.box textarea{
+	border: 1px solid #CCC;
+	margin-top: 8px;
+	width: 100%
+}
+
+.box form textarea{
+	height: 150px;
+	padding: 8px;
+	resize: vertical;
+}
+
+.box form input[type="text"],
+.box form input[type="password"],
+.box form input[type="number"],
+.box form select,
+.box textarea{
+	color: #000;
+	display: block;
+	font-size: 16px;
+	font-weight: 400;
+	height: 40px;
+	padding-left: 8px; 
+}
+
+.box form input[type="file"]{
+	padding: 8px;
+}
+
+.box form .group > input[type="submit"]{
+	background-color: #00BFA5;
+	border: 0;
+	color: #FFF;
+	cursor: pointer;
+	font-size: 16px;
+	height: 40px;
+	margin-top: 10px;
+	min-width: 100px;
+	padding: 5px 10px;
+	width: auto;
+}
+
+.box form .group a{
+	background-color: #E05C4E;
+	color: #FFF;
+	font-size: 15px;
+	margin: 10px 0;
+	padding: 5px 10px;
+	text-decoration: none;
+}
+/* ---------------------------------------------------------------- */
+
+/* Painel > Listar ------------------------------------------------ */
+.box .wraper-table{
+	overflow-x: auto;
+}
+
+.box table{
+	border-collapse: collapse;
+	font-weight: 300;
+	margin: 20px 0 40px 0;
+	min-width: 900px;
+	width: 100%;
+}
+
+.box table tr:nth-of-type(1){
+	background-color: #0091EA;
+	color: #FFF;
+}
+
+.box table tr{
+	border-bottom: 1px solid #CCC;
+	color: #555;
+}
+
+.box table tr td{
+	padding: 8px;
+}
+
+.box table tr td a{
+	background: #0091EA;
+	border-radius: 5px;
+	color: #FFF;
+	font-size: 13px;
+	padding: 4px 6px;
+	text-decoration: none;
+}
+
+.box table tr td a.edit{
+	background-color: #F4B03E;
+}
+
+.box table tr td a.del{
+	background-color: #E05C4E;
+}
+
+.box table tr td a.pay{
+	background-color: #00BFA5;
+}
+
+.box table tr td img{
+	height: 50px;
+	width: 50px;
+}
+/* ---------------------------------------------------------------- */
+
+/* Painel > Editar ------------------------------------------------ */
+.box-info .row{
+	padding: 8px 10px;
+	word-break: break-all;
+}
+
+.box-info .row-one{
+	width: 30%;
+}
+
+.box-info .row-two{
+	width: 70%;
+}
+
+.box-info .row-two p{
+	border-bottom: 1px dotted #CCC;
+	color: #646464;
+	padding: 8px 0;
+}
+
+.box-info .row-two p strong{
+	display: inline-block;
+	max-width: 100px;
+	width: 20%;
+}
+
+.box-info .row-two p i{
+	text-align: center;
+	width: 25px;
+}
+
+.box-info .boxes-title,
+.wraper-table .boxes-title{
+	background-color: #0091EA;
+	color: #FFF;
+	font-size: 18px;
+	font-weight: 300;
+	margin: 10px 0;
+	padding: 5px;
+	width: 100%;
+}
+
+.box-wraper-table table tr:nth-of-type(1){
+	background-color: #00BFA5;
+}
+
+.box-info .boxes-title i{
+	padding: 0 10px;
+}
+/* ---------------------------------------------------------------- */
+
+/* Responsive ----------------------------------------------------- */
+@media screen and (max-width: 1024px){
+
+	.box-info .row-two p strong{
+		max-width: 150px;
+		width: 30%;
+	}
+}
+
+@media screen and (max-width: 768px){
+
+	.box-info .row-one, .box-info .row-two {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 500px){
+
+	.box h2{
+		font-size: 20px;
+	}
+
+	.box-info .row-two p{
+		font-size: 12px;
+	}
+
+	.box-info .row-two p strong{
+		max-width: 200px;
+		width: 40%;
+	}
+}
+/* ---------------------------------------------------------------- */

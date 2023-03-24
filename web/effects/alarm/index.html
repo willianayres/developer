@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Projeto Cronometro - JavaScript</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+    </head>
+
+    <body>
+
+        <audio id="sound" src="alarm.mp3" style="display: none;"></audio>
+
+        <div class="container">
+            <h2>Minutos:</h2>
+            <select id="minutos" name="minutos"></select>
+
+            <h2>Segundos:</h2>
+            <select id="segundos" name="segundos"></select>
+            <br/>
+            <br/>
+            <button id="comecar">Começar!</button>
+
+            <div id="display">
+                <h3></h3>
+            </div><!--display-->
+        </div><!--container-->
+
+        <script src="js/alarm.js" type="text/javascript"></script>
+
+    </body>
+
+</html>

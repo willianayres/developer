@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1601496662 source:c:\users\willian\documents\will\eletronica\estrutura_de_dados\aula_04_listas_duplamente_encadeadas\exemplo\main.c
+	<stdio.h>
+	<stdlib.h>
+	"doublechainlist.h"
+
+1601498960 c:\users\willian\documents\will\eletronica\estrutura_de_dados\aula_04_listas_duplamente_encadeadas\exemplo\doublechainlist.h
+
+1601496954 source:c:\users\willian\documents\will\eletronica\estrutura_de_dados\aula_04_listas_duplamente_encadeadas\exemplo\doublechainlist.c
+	<stdio.h>
+	<stdlib.h>
+	"doublechainlist.h"
+

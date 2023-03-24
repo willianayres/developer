@@ -1,0 +1,241 @@
+/* Section 1 Banner ----------------------------------------------- */
+.one-banner {
+	height: 600px;
+	position: relative;
+	width: 100%;
+}
+
+.banner-single{
+	background-size: cover;
+	background-position: center;
+	display: none;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+.overlay{
+	background-color: rgba(51, 51, 51, 0.5);
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+}
+
+.one-banner form{
+	left: 50%;
+	max-width: 600px;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 93%;
+	z-index: 3;
+}
+
+.one-banner form h2{
+	color: #FFF;
+	font-size: 30px;
+	font-weight: 300;
+	text-align: center;
+}
+
+.one-banner form input[type="email"]{
+	background-color: #FFF;
+	border: 0;
+	border-radius: 5px;
+	color: #333;
+	font-size: 22px;
+	height: 66px;
+	margin-top: 10px;
+	padding-left: 10px;
+	width: 100%;
+}
+
+.one-banner form input[type="submit"]{
+	background-color: #00C59E;
+	border: 0;
+	border-radius: 5px;
+	color: #FFF;
+	cursor: pointer;
+	font-size: 22px;
+	height: 66px;
+	margin-top: 10px;
+	width: 100%;
+}
+
+.bullets{
+	bottom: 10px;
+	left: 50%;
+	position: absolute;
+	transform: translateX(-50%);
+	z-index: 5;
+}
+
+.bullets span{
+	background-color: #777;
+	border-radius: 50%;
+	cursor: pointer;
+	display: inline-block;
+	height: 16px;
+	margin: 0 10px;
+	width: 16px;
+}
+
+.bullets span.active{
+	background-color: #FFF;
+}
+/* ---------------------------------------------------------------- */
+
+/* Section 2 Description ------------------------------------------ */
+.two-description{
+	padding: 40px 0;
+}
+
+.two-description h2{
+	color: #444;
+	font-size: 28px;
+	font-weight: 300;
+	text-align: center;
+}
+
+.two-description h2 img{
+	border-radius: 50%;
+	display: inline-block;
+	height: 60px;
+	vertical-align: middle;
+	width: 60px;
+}
+
+.two-description p{
+	color: #444;
+	font-size: 16px;
+	font-weight: 300;
+	margin-top: 10px;
+}
+/* ---------------------------------------------------------------- */
+
+/* Section 3 Specialties ------------------------------------------ */
+.three-specialties{
+	background-color: #E2E2E2;
+	padding: 40px 0;
+}
+
+.three-specialties h2{
+	color: #999;
+	font-size: 30px;
+	font-weight: 400;
+	text-align: center;
+}
+
+.specialties{
+	margin: 40px 0;
+	padding: 0 30px;
+	text-align: center;
+}
+
+.specialties h3{
+	color: #404580;
+	font-size: 40px;
+}
+
+.specialties h4{
+	color: #BABABA;
+	font-size: 25px;
+	font-weight: 300;
+}
+
+.specialties p{
+	color: #444;
+	font-size: 15px;
+	margin-top: 10px;
+}
+/* ---------------------------------------------------------------- */
+
+/* Section 4 Extras ----------------------------------------------- */
+.four-extras{
+	background-color: #404580;
+	padding: 40px 0;
+}
+
+.four-extras .a1, .four-extras .a2{
+	padding: 0 50px;
+}
+
+.four-extras .title{
+	color: #FFF;
+	font-size: 25px;
+	font-weight: 300;
+	margin-bottom: 15px;
+}
+
+.deposition{
+	border-bottom: 1px solid #5056A0;
+	padding: 15px 0;
+}
+
+.deposition p{
+	color: #FFF;
+	font-size: 15px;
+}
+
+.description{
+	font-weight: 300;
+}
+
+.author{
+	font-weight: 700;
+	margin-top: 5px;
+}
+
+.services ul{
+	margin: 20px 0;
+}
+
+.services li{
+	color: #FFF;
+	font-size: 15px;
+	font-weight: 300;
+	margin-bottom: 15px;
+}
+/* ---------------------------------------------------------------- */
+
+/* RESPONSIVO ----------------------------------------------------- */
+@media screen and (max-width: 800px){
+
+	.specialties{
+		margin: 0;
+		padding: 40px 20px;
+	}
+
+	.four-extras .a2{
+		margin-top: 30px;
+	}
+}
+
+@media screen and (max-width: 400px){
+	
+	.bullets span{
+		display: block;
+		height: 10px;
+		margin: 10px auto;
+		width: 10px;
+	}
+
+	.three-specialties h2{
+		font-size: 26px;
+	}
+
+	.three-specialties .specialties h4{
+		font-size: 20px;
+	}
+
+	.four-extras .title{
+		font-size: 23px;
+		word-break: break-all;
+	}
+}

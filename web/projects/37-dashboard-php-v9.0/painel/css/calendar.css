@@ -1,0 +1,102 @@
+/* Calendar ------------------------------------------------------- */
+.box > table{
+	min-width: 0;
+}
+
+.calendar-wraper{
+	overflow-x: auto;
+}
+
+.calendar-buttons{
+	position: relative;
+	text-align: right;
+	top: -20px;
+	width: 100%;
+}
+
+.calendar-buttons a,
+.calendar-buttons p{
+	border: 1px solid #00BFA5;
+	border-radius: 50%;
+	color: #00BFA5;
+	display: inline-block;
+	margin: 0 10px;
+	padding: 5px 8px;
+	text-decoration: none;
+}
+
+.calendar-buttons p{
+	border: 1px solid #CCC;
+	color: #CCC;
+	cursor: not-allowed;
+}
+
+table{
+	background-color: #FFF !important;
+	border: 1px solid #CCC;
+}
+
+table.calendar td{
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	cursor: pointer;
+	text-align: center;
+	width: calc(100% / 7);
+}
+
+table.calendar tr:nth-of-type(1) td{
+	background: #0091EA;
+}
+
+table.calendar td.day-selected{
+	background: #E2E2E2;
+}
+
+.calendar{
+	background-color: #0091EA;
+	color: #FFF;
+	font-size: 18px;
+	font-weight: 300;
+	margin: 10px 0;
+	padding: 5px;
+	width: 100%;
+}
+
+h2.calendar{
+	font-size: 18px;
+}
+
+.tasks{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.task{
+	background-color: #F4B03E;
+	border: 4px solid #FFF;
+	color: #FFF;
+	width: 33.3%;
+}
+
+.task h3{
+	font-size: 16px;
+	font-weight: 300;
+	padding: 5px 10px;
+	word-break: break-all;
+}
+/* ---------------------------------------------------------------- */
+
+/* Responsive ----------------------------------------------------- */
+@media screen and (max-width: 768px){
+
+	.calendar-buttons{
+		margin-top: 15px;
+		position: initial;
+		text-align: center;
+		top: 0;
+	}
+
+	.task{
+		width: 100%;
+	}
+}

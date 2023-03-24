@@ -1,0 +1,75 @@
+/* RESPONSIVO ----------------------------------------------------- */
+@media screen and (max-width: 800px) {
+
+	img {
+		display: block;
+		float: none !important;
+		margin: 0 auto;
+	}
+
+	.width-33 {
+		padding: 20px;
+		width: 100%;
+	}
+
+	.width-50 {
+		padding: 20px;
+		width: 100%;
+	}
+
+	.specialties {
+		margin: 0;
+		padding: 40px 20px;
+	}
+
+	.desktop {
+		display: none;
+	}
+
+	.mobile {
+		display: block;
+	}
+
+	.mobile .button {
+		color: white;
+		cursor: pointer;
+		font-size: 24px;
+	}
+
+	.mobile ul {
+		display: none;
+		left: 0;
+		position: absolute;
+		text-align: center;
+		top: 65px;
+		width: 100%;
+		z-index: 3;
+	}
+
+	.mobile li {
+		background: white;
+		border: 1px solid #ccc;
+		display: block;
+		font-size: 17px;
+		font-weight: 300;
+		padding: 8px 0;
+	}
+
+	.mobile li a {
+		color: #444;
+		display: block;
+		text-decoration: none;
+	}
+
+	.container-notices .sidebar {
+		text-align: center;
+		width: 100%;
+	}
+
+	.container-notices .notices {
+		padding: 0 2%;
+		width: 100%;
+	}
+
+}
+/* ---------------------------------------------------------------- */
