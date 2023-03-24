@@ -1,0 +1,33 @@
+*{box-sizing:border-box;margin:0;padding:0;}
+
+body{background-color:#ccc;height:100%;}
+
+.container{
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+}
+
+.grid{
+	align-content: center;
+	display: flex;
+	flex-flow: row wrap;
+	height: 456px;
+	justify-content: center;
+	left: 50%;
+	position: relative;
+	transform: translateX(-50%);
+	width: 456px;
+}
+
+.square{
+	border: 1px solid #000;
+	height: 150px;
+	margin: 1px;
+	width: 150px;
+}
+
+.whitebag{
+	background-image: url('../whitebag.jpg');
+	background-size: cover;
+}
