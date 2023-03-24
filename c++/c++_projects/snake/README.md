@@ -7,5 +7,5 @@ Se você é atraído pelas belezas do mundo da programação, seguir esse relat�
 
 ## Observações
 
-  * Na pasta '/Projeto_Snake' encontram-se todos os arquivos do projeto. Caso queira ver, copiar, e se possível, até mandar dicas de como melhorar futuros códigos, sinta-se a vontade.
-  * Na pasta '/Snake' encotram-se todos os arquivos compilados do simulador, sinta-se a vontade para baixar e usufruir do simulador.
+  * Na pasta '/project' encontram-se todos os arquivos do projeto. Caso queira ver, copiar, e se possível, até mandar dicas de como melhorar futuros códigos, sinta-se a vontade.
+  * Na pasta '/game' encotram-se todos os arquivos compilados do simulador, sinta-se a vontade para baixar e usufruir do simulador.
