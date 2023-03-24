@@ -3,7 +3,7 @@
 Nesse repositório, encontram-se as aplicações/projetos que desenvolvi para
 aprender as noções básicas de desenvolvimento nas linguagens C, C++, Python.
 
-Ta´bme encontram-se aplicações Web desenvolvidos utilizando HTML, CSS, JavaScript,
+Também encontram-se aplicações Web desenvolvidas utilizando HTML, CSS, JavaScript,
 PHP e alguns frameworks.
 
 Obs: Os códigos que foram desenvolvidos não são otimizados, apenas serviram
