@@ -8,5 +8,5 @@ de base para aprendizagem das linguagens.
 
 ## Projetos
 
-* [Estudos](../../tree/main/c++/Estudos_C++)
-* [Projetos](../../tree/main/c++/Projetos_C++)
+* [Estudos](../../tree/main/c%2B%2B/Estudos_C%2B%2B)
+* [Projetos](../../tree/main/c%2B%2B/Projetos_C%2B%2B)
