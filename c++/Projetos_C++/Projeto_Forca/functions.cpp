@@ -39,7 +39,7 @@ void menu()
         std::cout << "[1] Jogar\n\n";
         std::cout << "[2] Cadastrar palavra\n\n";
         std::cout << "[3] Sair\n\n";
-        std::cout << "Escolha uma opÁ„o >> ";
+        std::cout << "Escolha uma op√ß√£o >> ";
         // Clear the input buffer. //
         setbuf(stdin,NULL);
         // Read the option from the keyboard. //
@@ -86,7 +86,7 @@ void checkPassword()
             system("cls");
             // Print the options. //
             std::cout << "<< Banco de Palavras >>\n\n[1] Ver banco\n\n[2] Inserir palavra\n\n[3] Voltar\n\n";
-            std::cout << "Escolha uma opÁ„o >> ";
+            std::cout << "Escolha uma op√ß√£o >> ";
             // Clear the input buffer. //
             setbuf(stdin,NULL);
             // Read the option from keyboard. //
@@ -124,10 +124,10 @@ void newWord()
     // Print the information. //
     std::cout << "<<           Cadastrar nova palavra no banco!           >>\n\n";
     std::cout << "  >> Para cadastrar uma nova palavra, tenha em mente que:\n\n";
-    std::cout << "  >> [1] A palavra n„o pode ter mais que 25 letras.\n\n";
-    std::cout << "  >> [2] A palavra n„o pode possuir n˙meros.\n\n";
-    std::cout << "  >> [3] A palavra n„o pode possuir espaÁos.\n\n";
-    std::cout << "  >> [4] A palavra n„o pode possuir quebras de linha.\n\n";
+    std::cout << "  >> [1] A palavra n√£o pode ter mais que 25 letras.\n\n";
+    std::cout << "  >> [2] A palavra n√£o pode possuir n√∫meros.\n\n";
+    std::cout << "  >> [3] A palavra n√£o pode possuir espa√ßos.\n\n";
+    std::cout << "  >> [4] A palavra n√£o pode possuir quebras de linha.\n\n";
     std::cout << "  >> Palavra >> ";
     // Variable to store the new word. //
     char word[26];
@@ -154,11 +154,11 @@ void newWord()
             std::cout << "\n  >> Palavra salva no banco com sucesso!\n\n  >> Retornando ao menu... ";
         }
         else
-            std::cout << "\n  >> Essa palavra j· existe no banco!\n\n  >> Retornando ao menu... ";
+            std::cout << "\n  >> Essa palavra j√° existe no banco!\n\n  >> Retornando ao menu... ";
     }
     else
     {
-        std::cout << "\n  >> A palavra n„o passou pelos requisitos!\n\n  >> Retornando ao menu... ";
+        std::cout << "\n  >> A palavra n√£o passou pelos requisitos!\n\n  >> Retornando ao menu... ";
     }
     // Pause the console. //
     getch();
@@ -213,7 +213,7 @@ void game()
         // Check if the letter was not typed yet. //
         if(checkLetterOnWord(letter,lettersTyped))
         {
-            std::cout << "Essa letra j· foi digitada! Tente novamente!\n\n";
+            std::cout << "Essa letra j√° foi digitada! Tente novamente!\n\n";
             system("pause");
         }
         else
@@ -228,7 +228,7 @@ void game()
             else
             {
                 // If the sorted word does not have the typed letter, increment the mistakes. //
-                std::cout << "\nA palavra n„o tem essa letra! Tente novamente\n\n";
+                std::cout << "\nA palavra n√£o tem essa letra! Tente novamente\n\n";
                 mistake++;
                 system("pause");
             }
@@ -243,7 +243,7 @@ void game()
             printTypeWord(&database);
             // Print the letters that was typed on the game. //
             printTypedLetters(lettersTyped,lettersTypedCount);
-            std::cout << "\n\n  Infelizmente, vocÍ n„o acertou a palavra e suas tentativas acabaram!\n\n";
+            std::cout << "\n\n  Infelizmente, voc√™ n√£o acertou a palavra e suas tentativas acabaram!\n\n";
             system("pause");
             // Return to menu. //
             menu();
@@ -258,7 +258,7 @@ void game()
             printTypeWord(&database);
             // Print the letters that was typed on the game. //
             printTypedLetters(lettersTyped,lettersTypedCount);
-            std::cout << "\n\tPARAB…NS!!!\n\n Voce acertou a palavra!\n\n";
+            std::cout << "\n\tPARAB√âNS!!!\n\n Voce acertou a palavra!\n\n";
             system("pause");
             menu();
         }
