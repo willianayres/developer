@@ -8,5 +8,5 @@ de base para aprendizagem das linguagens.
 
 ## Repositórios
 
-* [Estudos](https://github.com/willianayres/developer/tree/main/c%2B%2B/Estudos_C%2B%2B)
-* [Projetos](https://github.com/willianayres/developer/tree/main/c%2B%2B/Projetos_C%2B%2B)
+* [Estudos](https://github.com/willianayres/developer/tree/main/c%2B%2B/c%2B%2B_studies)
+* [Projetos](https://github.com/willianayres/developer/tree/main/c%2B%2B/c%2B%2B_projects)
