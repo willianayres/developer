@@ -1,0 +1,38 @@
+*{box-sizing:border-box;margin:0;padding:0;}
+
+html {
+	--bg: #F5F6F7;
+	--color-text: #9C9C9C;
+	--color-orange: #FF6A00;
+	--color-shadow: -4px -2px 4px 0px #FFFFFF, 4px 2px 6px 0px #DFE4EA;
+	--color-inset-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.8), inset 2px 2px 6px rgba(0, 0, 0, 0.1);
+	--color-equal-shadow: -2px -2px 6px rgba(3, 169, 244, 0.01), 2px 2px 6px rgba(0, 0, 0, 0.3);
+	--color-equal-inset-shadow: inset -2px -2px 6px rgba(255, 106, 0, 0.5), inset 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+html[data-theme='dark'] {
+	--bg: #131419;
+	--color-text: #FFFFFF;
+	--color-orange: #FF6A00;
+	--color-shadow: -3px -3px 10px rgba(255, 255, 255, 0.05), 3px 3px 15px rgba(0, 0, 0, 0.5);
+	--color-inset-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.01), 2px 2px 6px rgba(0, 0, 0, 0.8);
+	--color-equal-shadow: -2px -2px 6px rgba(3, 169, 244, 0.01), 2px 2px 6px rgba(0, 0, 0, 0.8);
+	--color-equal-inset-shadow: inset -2px -2px 6px rgba(255, 106, 0, 0.2), inset 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+body{
+	background-color: var(--bg);
+}
+
+main {
+	background-color: var(--bg);
+	border-radius: 10px;
+	box-shadow: var(--color-shadow);
+	height: 560px;
+	left: 50%;
+	overflow: hidden;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 300px;
+}
