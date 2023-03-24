@@ -12,6 +12,6 @@ de base para aprendizagem das linguagens.
 ## Projetos
 
   * [C++](https://github.com/willianayres/developer/tree/main/c%2B%2B)
-  * [C](https://github.com/willianayres/developer/tree/main/c/studies)
+  * [C](https://github.com/willianayres/developer/tree/main/c)
   * [Python](https://github.com/willianayres/developer/tree/main/python)
   * [Web](https://github.com/willianayres/developer/tree/main/web)
