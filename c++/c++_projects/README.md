@@ -8,5 +8,5 @@ de base para aprendizagem das linguagens.
 
 ## Projetos
 
-* [Forca](https://github.com/willianayres/developer/tree/main/c%2B%2B/Projetos_C%2B%2B/Projeto_Forca)
-* [Snake](https://github.com/willianayres/developer/tree/main/c%2B%2B/Projetos_C%2B%2B/Projeto_Snake)
+* [Forca](https://github.com/willianayres/developer/tree/main/c%2B%2B/c%2B%2B_projects/forca)
+* [Snake](https://github.com/willianayres/developer/tree/main/c%2B%2B/c%2B%2B_projects/snake)
