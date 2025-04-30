@@ -1,1 +1,9 @@
 pip freeze | %{$_.split('==')[0]} | %{pip install --upgrade $_}
+
+for /F "delims==" %i in ('pip freeze') do pip install --upgrade %i
+
+pip freeze > requirements.txt
+pip install --upgrade -r requirements.txt
+
+python -m http.server 8000
+python -m http.server 8000 --bind 127.0.0.1
