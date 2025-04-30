@@ -1,0 +1,23 @@
+*{
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+}
+
+header{
+	background:red;
+	height:100px;
+	width:100%;
+}
+
+main{
+	background:green;
+	height:100px;
+	width:100%;
+}
+
+footer{
+	background:blue;
+	height:100px;
+	width:100%;
+}
