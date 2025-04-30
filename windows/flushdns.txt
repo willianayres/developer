@@ -1,0 +1,17 @@
+ipconfig /release
+ipconfig /renew
+ipconfig /flushdns
+netsh winsock reset
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces\
+achar o registro com ip da maquina
+dword 32 -   TCPackFrequency 1 
+dword 32  -  TCPNoDelay 1
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSMQ
+ache o MSMQ dentro da microsoft
+dword 32  -  TCPNoDelay 1
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSMQ
+ache o MSMQ dentro da microsoft
+dword 32  -  TCPNoDelay 1
